@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Polymr is an LLM agent that focuses on control and user interaction."
+		/>
+		<title>Polymr</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<div class="page-shell">
+			<header class="topbar">
+				<div class="brand-lockup">
+					<div class="brand-mark">P</div>
+					<div>
+						<p class="eyebrow">User-centric Agent</p>
+						<h1>Polymr</h1>
+					</div>
+				</div>
+			</header>
+
+			<main>
+
+				<section class="content-section tabs-section">
+					<div class="panel tabs-shell">
+						<div class="tabs-nav" role="tablist" aria-label="Polymr topics">
+							<button id="tab-extensibility" class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="panel-extensibility" data-tab-target="extensibility">
+								Pages, scripts, and canvas
+							</button>
+							<button id="tab-control" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-control" data-tab-target="control" tabindex="-1">
+								Control model
+							</button>
+							<button id="tab-configuration" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-configuration" data-tab-target="configuration" tabindex="-1">
+								Configuration and Policies
+							</button>
+							<button id="tab-multi-user" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-multi-user" data-tab-target="multi-user" tabindex="-1">
+								Multi-user model
+							</button>
+							<button id="tab-channels-workflows" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-channels-workflows" data-tab-target="channels-workflows" tabindex="-1">
+								Channels and workflows
+							</button>
+							<button id="tab-mcp-ecosystem" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-mcp-ecosystem" data-tab-target="mcp-ecosystem" tabindex="-1">
+								MCP ecosystem
+							</button>
+						</div>
+
+						<section id="panel-extensibility" class="tab-panel" role="tabpanel" aria-labelledby="tab-extensibility" data-tab-panel="extensibility">
+							<div class="section-heading">
+								<h3>Build reusable applications and ad-hoc views on the same tool surface</h3>
+							</div>
+							<div class="feature-grid" id="extensibilityGrid"></div>
+						</section>
+
+						<section id="panel-control" class="tab-panel" role="tabpanel" aria-labelledby="tab-control" data-tab-panel="control" hidden>
+							<div class="section-heading">
+								<h3>Mechanisms around transparency and control</h3>
+							</div>
+							<div class="feature-grid" id="featureGrid"></div>
+						</section>
+
+						<section id="panel-configuration" class="tab-panel" role="tabpanel" aria-labelledby="tab-configuration" data-tab-panel="configuration" hidden>
+							<div class="section-heading">
+								<h3>Configuration as a runtime surface</h3>
+							</div>
+							<div class="feature-grid" id="configurationGrid"></div>
+						</section>
+
+						<section id="panel-multi-user" class="tab-panel" role="tabpanel" aria-labelledby="tab-multi-user" data-tab-panel="multi-user" hidden>
+							<div class="section-heading">
+								<h3>Execution follows the user context</h3>
+							</div>
+							<div class="feature-grid" id="multiUserGrid"></div>
+						</section>
+
+						<section id="panel-channels-workflows" class="tab-panel" role="tabpanel" aria-labelledby="tab-channels-workflows" data-tab-panel="channels-workflows" hidden>
+							<div class="section-heading">
+								<h3>Preconfigured sessions and custom workflow entry points</h3>
+							</div>
+							<div class="feature-grid" id="channelsWorkflowsGrid"></div>
+						</section>
+
+						<section id="panel-mcp-ecosystem" class="tab-panel" role="tabpanel" aria-labelledby="tab-mcp-ecosystem" data-tab-panel="mcp-ecosystem" hidden>
+							<div class="section-heading">
+								<h3>Standard MCP compatibility plus servers built for the full Polymr model</h3>
+							</div>
+							<div class="feature-grid" id="mcpEcosystemGrid"></div>
+						</section>
+					</div>
+				</section>
+
+			</main>
+		</div>
+
+		<div id="imageModal" class="image-modal" hidden>
+			<div class="image-modal-backdrop" data-close-modal="true"></div>
+			<div class="image-modal-dialog panel" role="dialog" aria-modal="true" aria-label="Expanded image preview">
+				<button id="imageModalClose" class="image-modal-close" type="button" aria-label="Close image preview">Close</button>
+				<img id="imageModalPreview" class="image-modal-preview" src="" alt="" />
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
