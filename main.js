@@ -216,7 +216,7 @@ const extensibilityCards = [
 		sections: [
 			{
 				title: '3. Canvas for ad-hoc session-local views',
-				copy: 'The LLM can create dynamic views on the fly inside a session, similar to localized pages that exist only for that session. This is useful for ad-hoc needs that do not fit a prebuilt application intended to serve everyone.',
+				copy: 'The LLM can create dynamic views on the fly inside a session, similar to localized pages that exist only for that session. This is useful for ad-hoc needs that do not fit a prebuilt application intended to serve everyone. You retain control over all third party imports.',
 				image: './assets/canvas-echarts-example.png',
 				imageAlt: 'Canvas example using ECharts in Polymr'
 			},
